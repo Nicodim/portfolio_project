@@ -2,6 +2,8 @@
   "Test example": "Тестовый пример",
   "Translate": "Перевод",
   "Language": "Русский",
-  "Loading": "Загрузка..."
-
+  "Loading": "Загрузка...",
+  "Page not found": "Page not found",
+  "Refresh the page": "Refresh the page",
+  "An unexpected error has occurred": "An unexpected error has occurred"
 }

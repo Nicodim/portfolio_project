@@ -11,16 +11,13 @@ export default {
     // bail: 0,
 
     // The directory where Jest should store its cached dependency information
-    // cacheDirectory: "C:\\Users\\nick\\AppData\\Local\\Temp\\jest",
+    // cacheDirectory: "C:\\Users\\tim\\AppData\\Local\\Temp\\jest",
 
     // Automatically clear mock calls, instances and results before every test
     clearMocks: true,
     testEnvironment: 'jsdom',
     coveragePathIgnorePatterns: [
         '\\\\node_modules\\\\',
-    ],
-    moduleDirectories: [
-        'node_modules',
     ],
     moduleFileExtensions: [
         'js',
@@ -30,11 +27,14 @@ export default {
         'json',
         'node',
     ],
+    moduleDirectories: [
+        'node_modules',
+    ],
     testMatch: [
+        // Обнаружил разницу между МАК ОС и ВИНДОУС!!!
         '<rootDir>src/**/*(*.)@(spec|test).[tj]s?(x)',
     ],
     rootDir: '../../',
-
     // Indicates whether the coverage information should be collected while executing the test
     // collectCoverage: false,
 
@@ -128,16 +128,13 @@ export default {
     // Allows you to use a custom runner instead of Jest's default test runner
     // runner: "jest-runner",
 
-    // The paths to modules that run some code to configure
-    // or set up the testing environment before each test
+    // The paths to modules that run some code to configure or set up the testing environment before each test
     // setupFiles: [],
 
-    // A list of paths to modules that run some code to configure
-    // or set up the testing framework before each test
+    // A list of paths to modules that run some code to configure or set up the testing framework before each test
     // setupFilesAfterEnv: [],
 
-    // The number of seconds after which a test is considered
-    // as slow and reported as such in the results.
+    // The number of seconds after which a test is considered as slow and reported as such in the results.
     // slowTestThreshold: 5,
 
     // A list of paths to snapshot serializer modules Jest should use for snapshot testing
@@ -153,8 +150,7 @@ export default {
 
     // The glob patterns Jest uses to detect test files
 
-    // An array of regexp pattern strings that are matched
-    // against all test paths, matched tests are skipped
+    // An array of regexp pattern strings that are matched against all test paths, matched tests are skipped
     // testPathIgnorePatterns: [
     //   "\\\\node_modules\\\\"
     // ],
@@ -168,8 +164,7 @@ export default {
     // This option allows use of a custom test runner
     // testRunner: "jest-circus/runner",
 
-    // This option sets the URL for the jsdom environment.
-    // It is reflected in properties such as location.href
+    // This option sets the URL for the jsdom environment. It is reflected in properties such as location.href
     // testURL: "http://localhost",
 
     // Setting this value to "fake" allows the use of fake timers for functions such as "setTimeout"
@@ -178,16 +173,13 @@ export default {
     // A map from regular expressions to paths to transformers
     // transform: undefined,
 
-    // An array of regexp pattern strings that are matched against
-    // all source file paths, matched files will skip transformation
+    // An array of regexp pattern strings that are matched against all source file paths, matched files will skip transformation
     // transformIgnorePatterns: [
     //   "\\\\node_modules\\\\",
     //   "\\.pnp\\.[^\\\\]+$"
     // ],
 
-    // An array of regexp pattern strings
-    // that are matched against all modules before the module
-    // loader will automatically return a mock for them
+    // An array of regexp pattern strings that are matched against all modules before the module loader will automatically return a mock for them
     // unmockedModulePathPatterns: undefined,
 
     // Indicates whether each individual test should be reported during the run

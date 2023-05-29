@@ -1,5 +1,9 @@
 {
-  "About us": "About us",
-  "Language": "Language",
-  "Main page": "Main page"
+  "About us": "О нас",
+  "An unexpected error has occurred": "Произошла непредвиденная ошибка",
+  "Language": "Язык",
+  "Main page": "Главная страница",
+  "Page not found": "Страница не найдена",
+  "Refresh the page": "Обновить страницу",
+  "throw error": "throw error"
 }
