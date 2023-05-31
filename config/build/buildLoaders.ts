@@ -19,7 +19,7 @@ export function buildLoaders({ isDev }: BuildOptions): webpack.RuleSetRule[] {
                     [
                         'i18next-extract',
                         {
-                            locales: ['ru', 'en'],
+                            locales: ['en', 'ru'],
                             keyAsDefaultValue: true,
                         },
                     ],
@@ -47,7 +47,7 @@ export function buildLoaders({ isDev }: BuildOptions): webpack.RuleSetRule[] {
         ],
     };
 
-    // Если не используем тайпскрипт - нужен babel-loader
+    // If typescript is not used, babel-loader is needed
     const typescriptLoader = {
         test: /\.tsx?$/,
         use: 'ts-loader',
