@@ -2,26 +2,22 @@ import type { Meta, StoryObj } from '@storybook/react';
 import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator/ThemeDecorator';
 import { Theme } from 'app/providers/ThemeProvider';
 
-import { Sidebar } from './Sidebar';
+import { LangSwitcher } from './LangSwitcher';
 
-const meta: Meta<typeof Sidebar> = {
-    title: 'widgets/Sidebar',
-    component: Sidebar,
+const meta: Meta<typeof LangSwitcher> = {
+    title: 'widgets/LangSwitcher',
+    component: LangSwitcher,
     tags: ['autodocs'],
 };
 
 export default meta;
-type Story = StoryObj<typeof Sidebar>;
+type Story = StoryObj<typeof LangSwitcher>;
 
 export const Light: Story = {
-    args: {
-
-    },
+    args: {},
 };
 
 export const Dark: Story = {
-    args: {
-
-    },
+    args: {},
     decorators: [ThemeDecorator(Theme.DARK)],
 };

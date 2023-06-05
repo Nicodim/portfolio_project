@@ -2,26 +2,25 @@ import type { Meta, StoryObj } from '@storybook/react';
 import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator/ThemeDecorator';
 import { Theme } from 'app/providers/ThemeProvider';
 
-import { Sidebar } from './Sidebar';
+import AboutPage from './AboutPage';
+import 'app/styles/index.scss';
 
-const meta: Meta<typeof Sidebar> = {
-    title: 'widgets/Sidebar',
-    component: Sidebar,
+const meta: Meta<typeof AboutPage> = {
+    title: 'pages/AboutPage',
+    component: AboutPage,
     tags: ['autodocs'],
 };
 
 export default meta;
-type Story = StoryObj<typeof Sidebar>;
+type Story = StoryObj<typeof AboutPage>;
 
-export const Light: Story = {
+export const LIGHT: Story = {
     args: {
-
     },
 };
 
-export const Dark: Story = {
+export const DARK: Story = {
     args: {
-
     },
     decorators: [ThemeDecorator(Theme.DARK)],
 };
