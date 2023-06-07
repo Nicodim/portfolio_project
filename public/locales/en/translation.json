@@ -2,9 +2,12 @@
   "Test example": "Test example",
   "Translate": "Translate",
   "Language": "English",
+  "Main page": "Main page",
+  "About us": "About us",
   "Loading": "Loading...",
   "Page not found": "Page not found",
   "Refresh the page": "Refresh the page",
   "An unexpected error has occurred": "An unexpected error has occurred",
-  "Toggle": "Toggle"
+  "Toggle": "Toggle",
+  "Short Language": "EN"
 }
