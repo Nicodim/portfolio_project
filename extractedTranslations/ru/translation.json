@@ -8,5 +8,7 @@
   "Refresh the page": "Обновить страницу",
   "Sing in": "Войти",
   "Toggle": "Переключить",
+  "decrement": "decrement",
+  "increment": "increment",
   "throw error": "Произошла ошибка"
 }
