@@ -11,5 +11,8 @@
   "Toggle": "Переключить",
   "Short Language": "RU",
   "Sing in": "Войти",
-  "decrement": "decrement"
+  "decrement": "decrement",
+  "Auth form": "Форма авторизации",
+  "The password or username you entered is not correct": "Введенный вами пароль или логин не верны",
+  "Exit": "Выйти"
 }

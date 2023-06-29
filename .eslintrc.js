@@ -37,7 +37,7 @@ module.exports = {
             ignoreAttribute: ['data-testid', 'to'],
         }],
         'max-len': ['error', {
-            code: 100,
+            code: 120,
             ignoreComments: true,
         }],
         'jsx-a11y/click-events-have-key-events': 'off',
@@ -45,6 +45,8 @@ module.exports = {
         'react-hooks/rules-of-hooks': 'error',
         'react-hooks/exhaustive-deps': 'error',
         'no-param-reassign': 'off',
+        '@typescript-eslint/no-non-null-assertion': 'off',
+        '@typescript-eslint/no-unnecessary-type-assertion': 'off',
     },
     globals: {
         __IS_DEV__: true,

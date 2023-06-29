@@ -3,6 +3,7 @@ import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator/ThemeDeco
 import { Theme } from 'app/providers/ThemeProvider';
 
 import { Navbar } from 'widgets/Navbar';
+import { StoreDecorator } from 'shared/config/storybook/StoreDecorator/StoreDecorator';
 
 const meta: Meta<typeof Navbar> = {
     title: 'widgets/Navbar',
@@ -17,11 +18,21 @@ export const Light: Story = {
     args: {
 
     },
+    decorators: [StoreDecorator({})],
+
 };
 
 export const Dark: Story = {
     args: {
 
     },
-    decorators: [ThemeDecorator(Theme.DARK)],
+    decorators: [ThemeDecorator(Theme.DARK), StoreDecorator({})],
+};
+export const WithAuthData: Story = {
+    args: {
+
+    },
+    decorators: [ThemeDecorator(Theme.DARK), StoreDecorator({
+        user: { },
+    })],
 };

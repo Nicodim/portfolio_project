@@ -11,5 +11,8 @@
   "Toggle": "Toggle",
   "Short Language": "EN",
   "Sing in": "Sing in",
-  "decrement": "decrement"
+  "decrement": "decrement",
+  "Auth form": "Auth form",
+  "The password or username you entered is not correct": "The password or username you entered is not correct",
+  "Exit": "Exit"
 }
