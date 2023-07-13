@@ -29,7 +29,7 @@
     "first": "Nick",
     "lastname": "Kravtsov",
     "age": 30,
-    "currency": "USDA",
+    "currency": "USD",
     "country": "Israel",
     "city": "Tel-Aviv",
     "username": "admin",
