@@ -8,7 +8,7 @@ import ProfilePage from './ProfilePage';
 import 'app/styles/index.scss';
 
 const meta: Meta<typeof ProfilePage> = {
-    title: 'pages/ProfilePage',
+    title: 'pages/ProfilePageHeader',
     component: ProfilePage,
     tags: ['autodocs'],
 };
