@@ -10,5 +10,10 @@
   "Your age": "Ваш возраст",
   "City": "Город",
   "Enter username": "Введите имя пользователя",
-  "Enter link to avatar": "Введите ссылку на аватар"
+  "Enter link to avatar": "Введите ссылку на аватар",
+  "Server error": "Ошибка сервера при сохранении",
+  "Incorrect user data": "Имя и фамилия обязательны",
+  "No data": "Данные не указаны",
+  "Incorrect age": "Некорректный возраст",
+  "Incorrect country": "Некорректный регион"
 }

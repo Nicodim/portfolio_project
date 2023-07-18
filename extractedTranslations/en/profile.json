@@ -11,5 +11,10 @@
   "Try reload page": "Try reload page",
   "Your age": "Your age",
   "Your name": "",
-  "last name": ""
+  "last name": "",
+  "Server error": "Server error",
+  "Incorrect user data": "Incorrect user data",
+  "No data": "No data",
+  "Incorrect age": "Incorrect age",
+  "Incorrect country": "Incorrect country"
 }
