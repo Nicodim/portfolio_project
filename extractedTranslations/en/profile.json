@@ -5,16 +5,16 @@
   "Edit": "",
   "Enter link to avatar": "Enter link to avatar",
   "Enter username": "Enter username",
+  "Incorrect age": "Incorrect age",
+  "Incorrect country": "Incorrect country",
+  "Incorrect user data": "Incorrect user data",
   "Last name": "",
+  "No data": "No data",
   "Profile": "",
   "Save": "Save",
+  "Server error": "Server error",
   "Try reload page": "Try reload page",
   "Your age": "Your age",
   "Your name": "",
-  "last name": "",
-  "Server error": "Server error",
-  "Incorrect user data": "Incorrect user data",
-  "No data": "No data",
-  "Incorrect age": "Incorrect age",
-  "Incorrect country": "Incorrect country"
+  "last name": ""
 }
