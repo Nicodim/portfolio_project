@@ -4,13 +4,9 @@ import ArticleDetailsPage from './ArticleDetailsPage';
 import 'app/styles/index.scss';
 
 const meta: Meta<typeof ArticleDetailsPage> = {
-    title: 'shared/Button',
+    title: 'pages/ArticleDetailsPage',
     component: ArticleDetailsPage,
     tags: ['autodocs'],
-    argTypes: {
-        // @ts-ignore
-        backgroundColor: { control: 'color' },
-    },
 };
 
 export default meta;
