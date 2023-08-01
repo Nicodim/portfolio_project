@@ -4,18 +4,34 @@ import { CommentList } from './CommentList';
 import 'app/styles/index.scss';
 
 const meta: Meta<typeof CommentList> = {
-    title: 'shared/CommentList',
+    title: 'entities/Comment/CommentList',
     component: CommentList,
     tags: ['autodocs'],
-    argTypes: {
-        // @ts-ignore
-        backgroundColor: { control: 'color' },
-    },
+
 };
 
 export default meta;
 type Story = StoryObj<typeof CommentList>;
 
 export const Primary: Story = {
-    args: {},
+    args: {
+        comments: [
+            {
+                id: '1',
+                text: 'hello world',
+                user: { id: '1', username: 'Vasya' },
+            },
+            {
+                id: '2',
+                text: 'Comment 2',
+                user: { id: '1', username: 'Petya' },
+            },
+        ],
+    },
+};
+export const Loading: Story = {
+    args: {
+        comments: [],
+        isLoading: true,
+    },
 };

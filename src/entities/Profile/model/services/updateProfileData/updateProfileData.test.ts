@@ -12,6 +12,8 @@ const data = {
     city: 'Dnipro',
     currency: Currency.USD,
     username: 'admin',
+    id: '1',
+
 };
 describe('updateProfileData.test', () => {
     test('success', async () => {
