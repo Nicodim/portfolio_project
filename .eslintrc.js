@@ -48,6 +48,8 @@ module.exports = {
         'no-undef': 'off',
         '@typescript-eslint/no-non-null-assertion': 'off',
         '@typescript-eslint/no-unnecessary-type-assertion': 'off',
+        'react/no-array-index-key': 'off',
+
     },
     globals: {
         __IS_DEV__: true,

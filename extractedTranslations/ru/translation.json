@@ -6,6 +6,9 @@
   "An unexpected error has occurred": "Произошла непредвиденная ошибка",
   "Article not found": "Статья не найдена",
   "Auth form": "Форма авторизации",
+  "Back to List": "Back to List",
+  "Back to lList": "Back to lList",
+  "Back to list": "Back to list",
   "Cancel": "Cancel",
   "Choose the country": "Choose the country",
   "City": "City",
@@ -30,6 +33,7 @@
   "Page not found": "Страница не найдена",
   "Profile": "Profile",
   "Profile page": "Profile page",
+  "Read more": "Читать дальше",
   "Refresh the page": "Обновить страницу",
   "Safe": "Safe",
   "Save": "Save",
@@ -48,5 +52,13 @@
   "increment": "increment",
   "last name": "last name",
   "safe": "safe",
-  "throw error": "Произошла ошибка"
+  "throw error": "Произошла ошибка",
+  "Назад к списку": "Назад к списку",
+  "Читать далее": {
+    "": {
+      "": {
+        "": ""
+      }
+    }
+  }
 }

@@ -6,6 +6,9 @@
   "An unexpected error has occurred": "An unexpected error has occurred",
   "Article not found": "Article not found",
   "Auth form": "Auth form",
+  "Back to List": "Back to List",
+  "Back to lList": "Back to lList",
+  "Back to list": "Back to list",
   "Cancel": "Cancel",
   "Choose the country": "Choose the country",
   "City": "City",
@@ -30,6 +33,7 @@
   "Page not found": "Page not found",
   "Profile": "Profile",
   "Profile page": "Profile page",
+  "Read more": "Read more",
   "Refresh the page": "Refresh the page",
   "Safe": "Safe",
   "Save": "Save",
@@ -48,5 +52,13 @@
   "increment": "increment",
   "last name": "last name",
   "safe": "safe",
-  "throw error": "throw error"
+  "throw error": "throw error",
+  "Назад к списку": "Назад к списку",
+  "Читать далее": {
+    "": {
+      "": {
+        "": ""
+      }
+    }
+  }
 }
