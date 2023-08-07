@@ -12,6 +12,7 @@ import { useAppDispatch } from 'shared/lib/hooks/useAppDispatch/useAppDispatch';
 import { AddCommentForm } from 'features/addCommentForm';
 import { Button, ButtonTheme } from 'shared/ui/Button/Button';
 import { RoutePath } from 'shared/config/routeConfig/routeConfig';
+import { Page } from 'shared/ui/Page/Page';
 import {
     fetchCommentsByArticleId,
 } from '../../model/services/fetchCommentsByArticleId/fetchCommentsByArticleId';
@@ -23,7 +24,8 @@ import cls from './ArticleDetailsPage.module.scss';
 export interface ArticleDetailsPageProps {
     className?: string;
 }
-const reducerList: ReducersList = {
+
+const reducers: ReducersList = {
     articleDetailsComments: articleDetailsCommentsReducer,
 };
 const ArticleDetailsPage = ({ className }: ArticleDetailsPageProps) => {
@@ -48,23 +50,23 @@ const ArticleDetailsPage = ({ className }: ArticleDetailsPageProps) => {
 
     if (!id) {
         return (
-            <div className={classNames(cls.ArticleDetailsPage, {}, [className])}>
+            <Page className={classNames(cls.ArticleDetailsPage, {}, [className])}>
                 {t('Article not found')}
-            </div>
+            </Page>
         );
     }
 
     return (
-        <DynamicModuleLoader reducers={reducerList} removeAfterUnmount>
-            <div className={classNames(cls.ArticleDetailsPage, {}, [className])}>
+        <DynamicModuleLoader reducers={reducers} removeAfterUnmount>
+            <Page className={classNames(cls.ArticleDetailsPage, {}, [className])}>
                 <Button theme={ButtonTheme.OUTLINE} onClick={onBackToList}>
                     {t('Back to list')}
                 </Button>
                 <ArticleDetails id={id} />
-                <AddCommentForm onSendComment={onSendComment} />
                 <Text className={cls.commentTitle} title={t('Comments')} />
+                <AddCommentForm onSendComment={onSendComment} />
                 <CommentList comments={comments} isLoading={commentsIsLoading} />
-            </div>
+            </Page>
         </DynamicModuleLoader>
 
     );
