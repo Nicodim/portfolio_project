@@ -4,7 +4,7 @@ import { Page } from './Page';
 import 'app/styles/index.scss';
 
 const meta: Meta<typeof Page> = {
-    title: 'shared/Page',
+    title: 'widgets/Page',
     component: Page,
     tags: ['autodocs'],
     argTypes: {
