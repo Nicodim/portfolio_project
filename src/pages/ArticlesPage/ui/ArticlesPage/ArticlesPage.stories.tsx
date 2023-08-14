@@ -4,7 +4,7 @@ import ArticlesPage from './ArticlesPage';
 import 'app/styles/index.scss';
 
 const meta: Meta<typeof ArticlesPage> = {
-    title: 'pages/ArticlesPage',
+    title: 'pages/Article/ArticlesPage',
     component: ArticlesPage,
     tags: ['autodocs'],
 };

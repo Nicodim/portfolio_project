@@ -17,9 +17,10 @@ export interface StateSchema {
     counter: CounterSchema;
     user: UserSchema;
     ui: UISchema;
+
     // Async reducers
-    profile?: ProfileSchema;
     loginForm?: LoginSchema;
+    profile?: ProfileSchema;
     articleDetails?: ArticleDetailsSchema;
     articleDetailsComments?: ArticleDetailsCommentsSchema;
     addCommentForm?: AddCommentFormSchema;
@@ -27,7 +28,8 @@ export interface StateSchema {
 }
 
 export type StateSchemaKey = keyof StateSchema;
-export type MountedReducers = OptionalRecord<StateSchemaKey, any>
+export type MountedReducers = OptionalRecord<StateSchemaKey, boolean>;
+
 export interface ReducerManager {
     getReducerMap: () => ReducersMapObject<StateSchema>;
     reduce: (state: StateSchema, action: AnyAction) => CombinedState<StateSchema>;

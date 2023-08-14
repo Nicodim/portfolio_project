@@ -1,6 +1,7 @@
 {
   "": "",
   "About us": "О нас",
+  "All articles": "Все статьи",
   "An error occurred while loading the article": "An error occurred while loading the article",
   "An error occurred while loading the profile": "An error occurred while loading the profile",
   "An unexpected error has occurred": "Произошла непредвиденная ошибка",
@@ -13,6 +14,7 @@
   "Choose the country": "Choose the country",
   "City": "City",
   "Comments": "Комментарии",
+  "Economics": "Экономика",
   "Edit": "Edit",
   "Edit username": "Edit username",
   "Enter Text": "Enter Text",
@@ -22,6 +24,7 @@
   "Enter text": "Enter text",
   "Enter username": "Введите username",
   "Exit": "Выйти",
+  "IT": "Айти",
   "Incorrect age": "Incorrect age",
   "Incorrect country": "Incorrect country",
   "Incorrect user data": "Incorrect user data",
@@ -37,28 +40,42 @@
   "Refresh the page": "Обновить страницу",
   "Safe": "Safe",
   "Save": "Save",
+  "Science": "Наука",
   "Select currency": "Select currency",
   "Send": "Send",
   "Server error": "Server error",
   "Sing in": "Войти",
   "Sity": "Sity",
+  "Sort by": "Сортировать по",
   "The password or username you entered is not correct": "The password or username you entered is not correct",
   "Toggle": "Переключить",
   "Try reload page": "Try reload page",
   "Your age": "Your age",
   "Your name": "Your name",
+  "ascending": "возрастанию",
+  "by": "по",
   "cancel": "cancel",
+  "creation date": "дате создания",
   "decrement": "decrement",
+  "descending": "убыванию",
   "increment": "increment",
   "last name": "last name",
   "safe": "safe",
+  "search": "поиск",
   "throw error": "Произошла ошибка",
+  "title": "названию",
+  "views": "просмотрам",
+  "Айти": "Айти",
+  "Все статьи": "Все статьи",
   "Назад к списку": "Назад к списку",
+  "Наука": "Наука",
+  "Статьи не найдены": "Статьи не найдены",
   "Читать далее": {
     "": {
       "": {
         "": ""
       }
     }
-  }
+  },
+  "Экономика": "Экономика"
 }

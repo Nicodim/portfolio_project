@@ -21,5 +21,14 @@
   "An error occurred while loading the article": "An error occurred while loading the article",
   "No comments": "No comments",
   "Enter comment text": "Enter comment text",
-  "Send": "Send"
+  "Send": "Send",
+  "Sort by": "Sort by",
+  "search": "search",
+  "by": "by",
+  "ascending": "ascending",
+  "descending": "descending",
+  "creation date": "creation date",
+  "title": "title",
+  "views": "views",
+  "All articles": "All articles"
 }
