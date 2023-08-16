@@ -34,10 +34,10 @@ module.exports = {
         'no-underscore-dangle': 'off',
         'i18next/no-literal-string': ['error', {
             markupOnly: true,
-            ignoreAttribute: ['data-testid', 'to'],
+            ignoreAttribute: ['data-testid', 'to', 'target'],
         }],
         'max-len': ['error', {
-            code: 120,
+            code: 125,
             ignoreComments: true,
         }],
         'jsx-a11y/click-events-have-key-events': 'off',
@@ -49,7 +49,7 @@ module.exports = {
         '@typescript-eslint/no-non-null-assertion': 'off',
         '@typescript-eslint/no-unnecessary-type-assertion': 'off',
         'react/no-array-index-key': 'off',
-
+        'arrow-body-style': 'off',
     },
     globals: {
         __IS_DEV__: true,
