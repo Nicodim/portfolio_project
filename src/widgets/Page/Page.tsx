@@ -33,18 +33,14 @@ export const Page = memo((props: PageProps) => {
         wrapperRef,
         callback: onScrollEnd,
     });
-    console.log('WRAPPERREF', scrollPosition);
-    console.log('pathname', pathname);
 
     useInitialEffect(() => {
         wrapperRef.current.scrollTop = scrollPosition;
     });
 
-    const onScroll = useThrottle((e: UIEvent<HTMLDivElement>) => {
-        console.log('BB', e.currentTarget);
-
+    const onScroll = useThrottle((e: UIEvent<HTMLElement>) => {
         dispatch(uiActions.setScrollPosition({
-            position: e.currentTarget.scrollTop,
+            position: e.currentTarget?.scrollTop,
             path: pathname,
         }));
     }, 500);
