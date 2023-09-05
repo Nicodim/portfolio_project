@@ -30,5 +30,7 @@
   "creation date": "creation date",
   "title": "title",
   "views": "views",
-  "All articles": "All articles"
+  "All articles": "All articles",
+  "Editing an article with ID = ": "Editing an article with ID = ",
+  "Creating a new article": "Creating a new article"
 }

@@ -30,5 +30,7 @@
   "creation date": "дате создания",
   "title": "названию",
   "views": "просмотрам",
-  "All articles": "Все статьи"
+  "All articles": "Все статьи",
+  "Editing an article with ID = ": "Редактирование статьи с ID = ",
+  "Creating a new article": "Создание новой статьи"
 }
