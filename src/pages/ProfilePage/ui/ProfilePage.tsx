@@ -27,6 +27,7 @@ import { ProfilePageHeader } from './ProfilePageHeader/ProfilePageHeader';
 const reducers: ReducersList = {
     profile: profileReducer,
 };
+
 export interface ProfilePageProps {
     className?: string;
 }
@@ -40,7 +41,7 @@ const ProfilePage = ({ className }: ProfilePageProps) => {
     const error = useSelector(getProfileError);
     const readonly = useSelector(getProfileReadonly);
     const validateErrors = useSelector(getProfileValidateErrors);
-    const { id } = useParams<{id: string}>();
+    const { id } = useParams<{ id: string }>();
 
     const validateErrorTranslates = {
         [ValidateProfileError.SERVER_ERROR]: t('Server error'),
