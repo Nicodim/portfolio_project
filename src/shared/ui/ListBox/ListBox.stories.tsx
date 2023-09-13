@@ -22,7 +22,7 @@ export const Primary: Story = {
     args: {
         value: 'ssss',
         defaultValue: 'ssss',
-        direction: 'bottom',
+        direction: 'bottom right',
         items: [
             { value: Country.Ukraine, content: Country.Ukraine },
             { value: Country.Israel, content: Country.Israel },
@@ -37,6 +37,7 @@ export const Dark: Story = {
         value: 'ssss',
         defaultValue: 'ssss',
         readonly: false,
+        direction: 'bottom right',
         items: [
             { value: Country.Ukraine, content: Country.Ukraine },
             { value: Country.Israel, content: Country.Israel },
@@ -52,6 +53,7 @@ export const Orange: Story = {
         value: 'ssss',
         defaultValue: 'ssss',
         readonly: false,
+        direction: 'bottom left',
         items: [
             { value: Country.Ukraine, content: Country.Ukraine },
             { value: Country.Israel, content: Country.Israel },
