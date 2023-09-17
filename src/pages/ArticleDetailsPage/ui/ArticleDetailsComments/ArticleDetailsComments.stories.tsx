@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import ArticleEditPage from './ArticleEditPage';
+import { ArticleDetailsComments } from './ArticleDetailsComments';
 import 'app/styles/index.scss';
 
-const meta: Meta<typeof ArticleEditPage> = {
-    title: 'pages/ArticleEditPage/ArticleEditPage',
-    component: ArticleEditPage,
+const meta: Meta<typeof ArticleDetailsComments> = {
+    title: 'shared/ArticleDetailsComments',
+    component: ArticleDetailsComments,
     tags: ['autodocs'],
     argTypes: {
         // @ts-ignore
@@ -14,7 +14,7 @@ const meta: Meta<typeof ArticleEditPage> = {
 };
 
 export default meta;
-type Story = StoryObj<typeof ArticleEditPage>;
+type Story = StoryObj<typeof ArticleDetailsComments>;
 
 export const Primary: Story = {
     args: {},

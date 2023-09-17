@@ -15,5 +15,6 @@
   "Incorrect user data": "Имя и фамилия обязательны",
   "No data": "Данные не указаны",
   "Incorrect age": "Некорректный возраст",
-  "Incorrect country": "Некорректный регион"
+  "Incorrect country": "Некорректный регион",
+  "Article not found": "Статьи не найденны"
 }
