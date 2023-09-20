@@ -32,5 +32,7 @@
   "views": "просмотрам",
   "All articles": "Все статьи",
   "Editing an article with ID = ": "Редактирование статьи с ID = ",
-  "Creating a new article": "Создание новой статьи"
+  "Creating a new article": "Создание новой статьи",
+  "Admin Panel": "Панель админа",
+  "You do not have access to this page": "У вас нет доступа к этой странице"
 }

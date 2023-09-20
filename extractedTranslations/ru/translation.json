@@ -1,6 +1,7 @@
 {
   "": "",
   "About us": "О нас",
+  "Admin Panel": "Панель админа",
   "All articles": "Все статьи",
   "An error occurred while loading the article": "An error occurred while loading the article",
   "An error occurred while loading the profile": "An error occurred while loading the profile",
@@ -56,6 +57,7 @@
   "The password or username you entered is not correct": "The password or username you entered is not correct",
   "Toggle": "Переключить",
   "Try reload page": "Try reload page",
+  "You do not have access to this page": "У вас нет доступа к этой странице",
   "Your age": "Your age",
   "Your name": "Your name",
   "ascending": "возрастанию",
