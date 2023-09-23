@@ -1,6 +1,5 @@
 import { classNames } from 'shared/lib/classNames/classNames';
 import { useTranslation } from 'react-i18next';
-import { memo, useCallback } from 'react';
 import { Text, TextTheme } from 'shared/ui/Text/Text';
 
 import { useSelector } from 'react-redux';
@@ -11,6 +10,7 @@ import { Currency } from 'entities/Currency';
 import { ProfileCard } from 'entities/Profile';
 import { DynamicModuleLoader, ReducersList } from 'shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
 import { VStack } from 'shared/ui/Stack';
+import { memo, useCallback } from 'react';
 import { EditableProfileCardHeader } from '../../ui/EditableProfileCardHeader/EditableProfileCardHeader';
 import { ValidateProfileError } from '../../model/types/editableProfileCardSchema';
 import { getProfileError } from '../../model/selectors/getProfileError/getProfileError';
@@ -23,8 +23,9 @@ import { getProfileForm } from '../../model/selectors/getProfileForm/getProfileF
 
 interface EditableProfileCardProps {
     className?: string;
-    id: string;
+    id?: string;
 }
+
 const reducers: ReducersList = {
     profile: profileReducer,
 };
