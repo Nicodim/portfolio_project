@@ -7,10 +7,6 @@ const meta: Meta<typeof ArticleInfiniteList> = {
     title: 'shared/ArticleInfitineList',
     component: ArticleInfiniteList,
     tags: ['autodocs'],
-    argTypes: {
-        // @ts-ignore
-        backgroundColor: { control: 'color' },
-    },
 };
 
 export default meta;
