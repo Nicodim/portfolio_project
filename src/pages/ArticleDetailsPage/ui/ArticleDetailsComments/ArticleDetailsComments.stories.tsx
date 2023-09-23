@@ -17,5 +17,9 @@ export default meta;
 type Story = StoryObj<typeof ArticleDetailsComments>;
 
 export const Primary: Story = {
-    args: {},
+    args: {
+        id: '1',
+    },
+    decorators: [StoreDecorator({})],
+
 };

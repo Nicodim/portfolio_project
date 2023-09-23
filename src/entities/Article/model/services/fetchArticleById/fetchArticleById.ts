@@ -16,6 +16,9 @@ export const fetchArticleById = createAsyncThunk<Article, string, ThunkConfig<st
             if (!response.data) {
                 throw new Error();
             }
+            if (!articleId) {
+                throw new Error();
+            }
             return response.data;
         } catch (e) {
             console.log(e);

@@ -28,7 +28,7 @@ import cls from './ArticleDetails.module.scss';
 
 export interface ArticleDetailsProps {
     className?: string;
-    id: string;
+    id?: string;
 }
 
 const reducers:ReducersList = {

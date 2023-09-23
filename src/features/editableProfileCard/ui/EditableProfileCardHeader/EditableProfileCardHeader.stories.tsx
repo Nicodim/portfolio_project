@@ -18,4 +18,5 @@ type Story = StoryObj<typeof EditableProfileCardHeader>;
 
 export const Primary: Story = {
     args: {},
+    decorators: [StoreDecorator({})],
 };
