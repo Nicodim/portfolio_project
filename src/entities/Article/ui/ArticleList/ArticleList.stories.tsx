@@ -3,7 +3,8 @@ import { Theme } from 'app/providers/ThemeProvider';
 import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator/ThemeDecorator';
 import { ArticleList } from './ArticleList';
 import 'app/styles/index.scss';
-import { Article, ArticleView } from '../../model/types/article';
+import { Article } from '../../model/types/article';
+import { ArticleView } from '../../model/consts/consts';
 
 const meta: Meta<typeof ArticleList> = {
     title: 'entities/Article/ArticleList',
