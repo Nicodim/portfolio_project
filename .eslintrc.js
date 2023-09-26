@@ -50,6 +50,7 @@ module.exports = {
                     'align',
                     'direction',
                     'gap',
+                    'border',
                 ],
             }],
         'max-len': ['error', {
