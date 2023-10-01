@@ -1,8 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { StoreDecorator } from 'shared/config/storybook/StoreDecorator/StoreDecorator';
+import { StoreDecorator } from '@/shared/config/storybook/StoreDecorator/StoreDecorator';
 
 import { EditableProfileCardHeader } from './EditableProfileCardHeader';
-import 'app/styles/index.scss';
+import '@/app/styles/index.scss';
 
 const meta: Meta<typeof EditableProfileCardHeader> = {
     title: 'features/editableProfileCard/EditableProfileCardHeader',

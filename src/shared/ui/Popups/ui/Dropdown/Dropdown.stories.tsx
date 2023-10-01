@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
 import { Dropdown } from './Dropdown';
-import 'app/styles/index.scss';
+import '@/app/styles/index.scss';
 import { Button } from '../../../Button/Button';
 
 const meta: Meta<typeof Dropdown> = {

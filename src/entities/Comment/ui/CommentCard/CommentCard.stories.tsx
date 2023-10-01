@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
 import { CommentCard } from './CommentCard';
-import 'app/styles/index.scss';
+import '@/app/styles/index.scss';
 
 const meta: Meta<typeof CommentCard> = {
     title: 'entities/Comment/CommentCard',

@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
 import ArticlesPage from './ArticlesPage';
-import 'app/styles/index.scss';
+import '@/app/styles/index.scss';
 
 const meta: Meta<typeof ArticlesPage> = {
     title: 'pages/Article/ArticlesPage',

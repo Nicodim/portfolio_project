@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
 import { ArticleSortSelector } from './ArticleSortSelector';
-import 'app/styles/index.scss';
+import '@/app/styles/index.scss';
 
 const meta: Meta<typeof ArticleSortSelector> = {
     title: 'entities/Article/ArticleSortSelector',

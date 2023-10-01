@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
 import { ArticleInfiniteList } from './ArticleInfiniteList';
-import 'app/styles/index.scss';
+import '@/app/styles/index.scss';
 
 const meta: Meta<typeof ArticleInfiniteList> = {
     title: 'shared/ArticleInfitineList',
