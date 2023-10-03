@@ -1,7 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-
 import { RatingCard } from './RatingCard';
-import 'app/styles/index.scss';
 
 const meta: Meta<typeof RatingCard> = {
     title: 'shared/RatingCard',
