@@ -69,7 +69,7 @@ module.exports = {
         '@typescript-eslint/no-unnecessary-type-assertion': 'off',
         'react/no-array-index-key': 'off',
         'arrow-body-style': 'off',
-        'nicodim-plugin/path-checker': 'error',
+        'nicodim-plugin/path-checker': ['error', { alias: '@' }],
     },
     globals: {
         __IS_DEV__: true,
