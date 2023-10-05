@@ -4,7 +4,7 @@ import { AvatarDropdown } from './AvatarDropdown';
 import '@/app/styles/index.scss';
 
 const meta: Meta<typeof AvatarDropdown> = {
-    title: 'shared/AvatarDropdown',
+    title: 'features/AvatarDropdown',
     component: AvatarDropdown,
     tags: ['autodocs'],
     argTypes: {

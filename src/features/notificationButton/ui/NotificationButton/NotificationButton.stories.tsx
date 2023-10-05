@@ -4,7 +4,7 @@ import { NotificationButton } from './NotificationButton';
 import '@/app/styles/index.scss';
 
 const meta: Meta<typeof NotificationButton> = {
-    title: 'shared/NotificationButton',
+    title: 'features/NotificationButton',
     component: NotificationButton,
     tags: ['autodocs'],
     argTypes: {

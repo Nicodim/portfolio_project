@@ -4,7 +4,7 @@ import { NotificationItem } from './NotificationItem';
 import '@/app/styles/index.scss';
 
 const meta: Meta<typeof NotificationItem> = {
-    title: 'shared/NotificationItem',
+    title: 'entities/Notification/NotificationItem',
     component: NotificationItem,
     tags: ['autodocs'],
     argTypes: {
@@ -17,5 +17,11 @@ export default meta;
 type Story = StoryObj<typeof NotificationItem>;
 
 export const Primary: Story = {
-    args: {},
+    args: {
+        item: {
+            id: '1',
+            title: 'aaaaa',
+            description: 'asdasdasd',
+        },
+    },
 };
