@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
 import { CommentCard } from './CommentCard';
+// eslint-disable-next-line nicodim-plugin/layer-imports
 import '@/app/styles/index.scss';
 
 const meta: Meta<typeof CommentCard> = {

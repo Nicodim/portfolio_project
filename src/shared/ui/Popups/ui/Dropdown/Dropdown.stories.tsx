@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
 import { Dropdown } from './Dropdown';
+// eslint-disable-next-line nicodim-plugin/layer-imports
 import '@/app/styles/index.scss';
 import { Button } from '../../../Button/Button';
 

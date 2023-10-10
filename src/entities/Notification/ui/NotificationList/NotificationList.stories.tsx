@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
 import { NotificationList } from './NotificationList';
+// eslint-disable-next-line nicodim-plugin/layer-imports
 import '@/app/styles/index.scss';
 import { StoreDecorator } from '@/shared/config/storybook/StoreDecorator/StoreDecorator';
 

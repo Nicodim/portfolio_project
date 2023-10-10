@@ -1,9 +1,9 @@
 import type { Meta, StoryObj } from '@storybook/react';
+// eslint-disable-next-line nicodim-plugin/layer-imports
 import '@/app/styles/index.scss';
-import { Country } from '@/entities/Country';
 import { ThemeDecorator } from '@/shared/config/storybook/ThemeDecorator/ThemeDecorator';
-import { Theme } from '@/app/providers/ThemeProvider';
 import { ListBox } from './ListBox';
+import { Theme } from '@/shared/const/theme';
 
 const meta: Meta<typeof ListBox> = {
     title: 'shared/ListBox',
@@ -24,10 +24,8 @@ export const Primary: Story = {
         defaultValue: 'ssss',
         direction: 'bottom right',
         items: [
-            { value: Country.Ukraine, content: Country.Ukraine },
-            { value: Country.Israel, content: Country.Israel },
-            { value: Country.Germany, content: Country.Germany },
-            { value: Country.Georgia, content: Country.Georgia },
+            { content: '1asfasfasf23', value: '123' },
+            { content: '1asfasfasf21233', value: '1232' },
         ],
     },
 };
@@ -39,10 +37,8 @@ export const Dark: Story = {
         readonly: false,
         direction: 'bottom right',
         items: [
-            { value: Country.Ukraine, content: Country.Ukraine },
-            { value: Country.Israel, content: Country.Israel },
-            { value: Country.Germany, content: Country.Germany },
-            { value: Country.Georgia, content: Country.Georgia },
+            { content: '1asfasfasf23', value: '123' },
+            { content: '1asfasfasf21233', value: '1232' },
         ],
     },
     decorators: [ThemeDecorator(Theme.DARK)],
@@ -55,10 +51,8 @@ export const Orange: Story = {
         readonly: false,
         direction: 'bottom left',
         items: [
-            { value: Country.Ukraine, content: Country.Ukraine },
-            { value: Country.Israel, content: Country.Israel },
-            { value: Country.Germany, content: Country.Germany },
-            { value: Country.Georgia, content: Country.Georgia },
+            { content: '1asfasfasf23', value: '123' },
+            { content: '1asfasfasf21233', value: '1232' },
         ],
     },
     decorators: [ThemeDecorator(Theme.ORANGE)],

@@ -53,12 +53,7 @@ module.exports = {
                     'border',
                 ],
             }],
-        'max-len': ['error', {
-            code: 125,
-
-            ignoreComments: true,
-        },
-        ],
+        'max-len': ['error', { code: 125, ignoreComments: true }],
         'jsx-a11y/click-events-have-key-events': 'off',
         'jsx-a11y/no-static-element-interactions': 'off',
         'react-hooks/rules-of-hooks': 'error',
@@ -70,6 +65,13 @@ module.exports = {
         'react/no-array-index-key': 'off',
         'arrow-body-style': 'off',
         'nicodim-plugin/path-checker': ['error', { alias: '@' }],
+        'nicodim-plugin/layer-imports': [
+            'error',
+            {
+                alias: '@',
+                ignoreImportPatterns: ['**/StoreProvider', '**/testing'],
+            },
+        ],
         'nicodim-plugin/public-api-imports': [
             'error', {
                 alias: '@',

@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
+// eslint-disable-next-line nicodim-plugin/layer-imports
 import '@/app/styles/index.scss';
 import { Country } from '@/entities/Country';
 import { Currency } from '@/entities/Currency';

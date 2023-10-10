@@ -3,6 +3,7 @@ import { action } from '@storybook/addon-actions';
 import { StoreDecorator } from '@/shared/config/storybook/StoreDecorator/StoreDecorator';
 
 import AddCommentForm from './AddCommentForm';
+// eslint-disable-next-line nicodim-plugin/layer-imports
 import '@/app/styles/index.scss';
 
 const meta: Meta<typeof AddCommentForm> = {
