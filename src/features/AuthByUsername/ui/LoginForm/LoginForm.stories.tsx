@@ -3,6 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 // eslint-disable-next-line nicodim-plugin/layer-imports
 import '@/app/styles/index.scss';
 import { StoreDecorator } from '@/shared/config/storybook/StoreDecorator/StoreDecorator';
+
 import LoginForm from './LoginForm';
 
 const meta: Meta<typeof LoginForm> = {

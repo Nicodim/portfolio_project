@@ -1,5 +1,5 @@
-import type { Meta, StoryObj } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
+import type { Meta, StoryObj } from '@storybook/react';
 
 import { Tabs } from './Tabs';
 // eslint-disable-next-line nicodim-plugin/layer-imports

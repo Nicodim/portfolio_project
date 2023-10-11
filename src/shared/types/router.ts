@@ -1,4 +1,5 @@
 import { RouteProps } from 'react-router-dom';
+
 // eslint-disable-next-line nicodim-plugin/layer-imports
 import { UserRole } from '@/entities/User';
 

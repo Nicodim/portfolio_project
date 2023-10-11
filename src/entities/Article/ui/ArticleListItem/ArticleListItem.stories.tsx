@@ -1,11 +1,13 @@
 import type { Meta, StoryObj } from '@storybook/react';
+
 import { ThemeDecorator } from '@/shared/config/storybook/ThemeDecorator/ThemeDecorator';
+import { Theme } from '@/shared/const/theme';
+
 import { ArticleListItem } from './ArticleListItem';
 // eslint-disable-next-line nicodim-plugin/layer-imports
 import '@/app/styles/index.scss';
-import { Article } from '../../model/types/article';
 import { ArticleView } from '../../model/consts/consts';
-import { Theme } from '@/shared/const/theme';
+import { Article } from '../../model/types/article';
 
 const meta: Meta<typeof ArticleListItem> = {
     title: 'entities/Article/ArticleListItem',

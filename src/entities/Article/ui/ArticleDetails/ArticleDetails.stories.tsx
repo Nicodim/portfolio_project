@@ -3,9 +3,10 @@ import type { Meta, StoryObj } from '@storybook/react';
 // eslint-disable-next-line nicodim-plugin/layer-imports
 import '@/app/styles/index.scss';
 import { StoreDecorator } from '@/shared/config/storybook/StoreDecorator/StoreDecorator';
+
+import { ArticleDetails } from './ArticleDetails';
 import { ArticleType, ArticleBlockType } from '../../model/consts/consts';
 import { Article } from '../../model/types/article';
-import { ArticleDetails } from './ArticleDetails';
 
 const meta: Meta<typeof ArticleDetails> = {
     title: 'entities/Article/ArticleDetails',

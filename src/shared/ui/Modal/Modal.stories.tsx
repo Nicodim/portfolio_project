@@ -1,10 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { ThemeDecorator } from '@/shared/config/storybook/ThemeDecorator/ThemeDecorator';
 
+import { ThemeDecorator } from '@/shared/config/storybook/ThemeDecorator/ThemeDecorator';
 // eslint-disable-next-line nicodim-plugin/layer-imports
 import '@/app/styles/index.scss';
-import { Modal } from './Modal';
 import { Theme } from '@/shared/const/theme';
+
+import { Modal } from './Modal';
 
 const meta: Meta<typeof Modal> = {
     title: 'shared/Modal',

@@ -1,9 +1,10 @@
 import { Country } from '@/entities/Country';
 import { Currency } from '@/entities/Currency';
-import { ValidateProfileError } from '../../model/consts/consts';
-import { ProfileSchema } from '../types/editableProfileCardSchema';
-import { updateProfileData } from '../services/updateProfileData/updateProfileData';
+
 import { profileActions, profileReducer } from './profileSlice';
+import { ValidateProfileError } from '../../model/consts/consts';
+import { updateProfileData } from '../services/updateProfileData/updateProfileData';
+import { ProfileSchema } from '../types/editableProfileCardSchema';
 
 const data = {
     country: Country.Ukraine,

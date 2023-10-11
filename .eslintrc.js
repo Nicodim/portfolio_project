@@ -6,6 +6,7 @@ module.exports = {
     },
     extends: ['plugin:react/recommended', 'airbnb', 'plugin:i18next/recommended'],
     parser: '@typescript-eslint/parser',
+
     parserOptions: {
         ecmaFeatures: {
             jsx: true,
@@ -13,14 +14,19 @@ module.exports = {
         ecmaVersion: 'latest',
         sourceType: 'module',
     },
-    plugins: ['react',
-        '@typescript-eslint',
-        'i18next',
-        'react-hooks',
-        'nicodim-plugin'],
+    plugins:
+        [
+            'react',
+            '@typescript-eslint',
+            'i18next',
+            'react-hooks',
+            'nicodim-plugin',
+            'unused-imports',
+        ],
     rules: {
         'react/jsx-indent': [2, 4],
         'react/jsx-indent-props': [2, 4],
+        'unused-imports/no-unused-imports': 'error',
         indent: [2, 4],
         'react/jsx-filename-extension': [2, {
             extensions: ['.js', '.jsx', '.tsx'],
@@ -76,6 +82,30 @@ module.exports = {
             'error', {
                 alias: '@',
                 testFilesPatterns: ['**/*.test.*', '**/*.story.*', '**/StoreDecorator.tsx'],
+            },
+        ],
+        'import/order': [
+            'error',
+            {
+                groups: ['builtin', 'external', 'internal'],
+                pathGroups: [
+                    {
+                        pattern: 'react',
+                        group: 'external',
+                        position: 'before',
+                    },
+                    {
+                        pattern: '@/**',
+                        group: 'external',
+                        position: 'after',
+                    },
+                ],
+                pathGroupsExcludedImportTypes: ['react'],
+                'newlines-between': 'always',
+                alphabetize: {
+                    order: 'asc',
+                    caseInsensitive: true,
+                },
             },
         ],
 

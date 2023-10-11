@@ -3,8 +3,9 @@ import type { Meta, StoryObj } from '@storybook/react';
 // eslint-disable-next-line nicodim-plugin/layer-imports
 import '@/app/styles/index.scss';
 import { ThemeDecorator } from '@/shared/config/storybook/ThemeDecorator/ThemeDecorator';
-import { Skeleton } from './Skeleton';
 import { Theme } from '@/shared/const/theme';
+
+import { Skeleton } from './Skeleton';
 
 const meta: Meta<typeof Skeleton> = {
     title: 'shared/Skeleton',

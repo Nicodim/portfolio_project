@@ -1,9 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react';
+
 // eslint-disable-next-line nicodim-plugin/layer-imports
 import '@/app/styles/index.scss';
 import { ThemeDecorator } from '@/shared/config/storybook/ThemeDecorator/ThemeDecorator';
-import { ListBox } from './ListBox';
 import { Theme } from '@/shared/const/theme';
+
+import { ListBox } from './ListBox';
 
 const meta: Meta<typeof ListBox> = {
     title: 'shared/ListBox',

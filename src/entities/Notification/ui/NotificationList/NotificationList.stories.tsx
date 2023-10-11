@@ -1,9 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
+import { StoreDecorator } from '@/shared/config/storybook/StoreDecorator/StoreDecorator';
+
 import { NotificationList } from './NotificationList';
+
 // eslint-disable-next-line nicodim-plugin/layer-imports
 import '@/app/styles/index.scss';
-import { StoreDecorator } from '@/shared/config/storybook/StoreDecorator/StoreDecorator';
 
 const meta: Meta<typeof NotificationList> = {
     title: 'entities/Notification/NotificationList',
