@@ -15,7 +15,16 @@ const preview: Preview = {
     ],
     parameters: {
         actions: { argTypesRegex: '^on[A-Z].*' },
+        themes: {
+            default: 'dark',
+            list: [
+                { name: 'light', class: Theme.LIGHT, color: '#e6ecf1' },
+                { name: 'dark', class: Theme.DARK, color: '#162950' },
+                { name: 'orange', class: Theme.ORANGE, color: '#e78e0b' },
+            ],
+        },
     },
+
 };
 
 export default preview;
