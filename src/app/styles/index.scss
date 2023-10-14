@@ -30,7 +30,7 @@
 }
 
 *::-webkit-scrollbar-thumb {
-    background-color: var(--inverted-primary-color);    /* цвет плашки */
-    border-radius: 20px;       /* закругления плашки */
-    border: 2px solid var(--primary-color);  /* padding вокруг плашки */
+    background-color: var(--inverted-primary-color);    /* plate color */
+    border-radius: 20px;       /* border-radius plate */
+    border: 2px solid var(--primary-color);  /* padding around plate */
 }
