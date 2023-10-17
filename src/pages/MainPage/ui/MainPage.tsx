@@ -12,7 +12,7 @@ const MainPage = () => {
         setValue(value);
     };
     return (
-        <Page>
+        <Page data-testid="MainPage">
             {t('Main page')}
         </Page>
     );
