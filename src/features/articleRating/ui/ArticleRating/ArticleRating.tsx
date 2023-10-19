@@ -13,6 +13,7 @@ export interface ArticleRatingProps {
     className?: string;
     articleId: string;
 }
+
 const ArticleRating = memo((props: ArticleRatingProps) => {
     const { className, articleId } = props;
     const { t } = useTranslation();
@@ -60,6 +61,7 @@ const ArticleRating = memo((props: ArticleRatingProps) => {
             className={className}
             title={t('Rate this article')}
             feedbackTitle={t('Leave feedback on the article, this will help improve the quality')}
+            hasFeedback
         />
     );
 });

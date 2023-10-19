@@ -37,11 +37,9 @@ export const RatingCard = memo((props: RatingCardProps) => {
     const [starsCount, setStarsCount] = useState(rate);
     const [feedback, setFeedback] = useState('');
     const isMobile = useDevice();
-    console.log('isModalOpen', isModalOpen);
 
     const onSelectStars = useCallback((selectedStarsCount: number) => {
         setStarsCount(selectedStarsCount);
-        console.log(1);
         if (hasFeedback) {
             setIsModalOpen(true);
         } else {
@@ -65,6 +63,7 @@ export const RatingCard = memo((props: RatingCardProps) => {
                 title={feedbackTitle}
             />
             <Input
+                data-testid="RatingCard.Input"
                 value={feedback}
                 onChange={setFeedback}
                 placeholder={t('Your rate')}
@@ -86,7 +85,7 @@ export const RatingCard = memo((props: RatingCardProps) => {
         );
     }
     return (
-        <Card className={className} max>
+        <Card className={className} max data-testid="RatingCard">
             <VStack align="center" gap="8" max>
                 <Text title={starsCount ? t('Thanks for rate!') : title} />
                 <StarRating selectedStars={starsCount} size={40} onSelect={onSelectStars} />
@@ -95,10 +94,17 @@ export const RatingCard = memo((props: RatingCardProps) => {
                 <VStack max gap="32">
                     {modalContent}
                     <HStack max gap="16" justify="end">
-                        <Button onClick={cancelHandle} theme={ButtonTheme.OUTLINE_RED}>
+                        <Button
+                            data-testid="RatingCard.Close"
+                            onClick={cancelHandle}
+                            theme={ButtonTheme.OUTLINE_RED}
+                        >
                             {t('Close')}
                         </Button>
-                        <Button onClick={acceptHandle}>
+                        <Button
+                            data-testid="RatingCard.Send"
+                            onClick={acceptHandle}
+                        >
                             {t('Send')}
                         </Button>
                     </HStack>
