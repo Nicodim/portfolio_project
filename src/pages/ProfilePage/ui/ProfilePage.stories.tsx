@@ -21,34 +21,40 @@ type Story = StoryObj<typeof ProfilePage>;
 
 export const LIGHT: Story = {
     args: {},
-    decorators: [ThemeDecorator(Theme.LIGHT), StoreDecorator({
-        profile: {
-            data: {
-                country: Country.Ukraine,
-                age: 30,
-                first: 'Nick',
-                lastname: 'Kravtsov',
-                city: 'Dnipro',
-                currency: Currency.USD,
-                username: 'admin',
+    decorators: [
+        ThemeDecorator(Theme.LIGHT),
+        StoreDecorator({
+            profile: {
+                data: {
+                    country: Country.Ukraine,
+                    age: 30,
+                    first: 'Nick',
+                    lastname: 'Kravtsov',
+                    city: 'Dnipro',
+                    currency: Currency.USD,
+                    username: 'admin',
+                },
             },
-        },
-    })],
+        }),
+    ],
 };
 
 export const DARK: Story = {
     args: {},
-    decorators: [ThemeDecorator(Theme.DARK), StoreDecorator({
-        profile: {
-            data: {
-                country: Country.Ukraine,
-                age: 30,
-                first: 'Nick',
-                lastname: 'Kravtsov',
-                city: 'Dnipro',
-                currency: Currency.USD,
-                username: 'admin',
+    decorators: [
+        ThemeDecorator(Theme.DARK),
+        StoreDecorator({
+            profile: {
+                data: {
+                    country: Country.Ukraine,
+                    age: 30,
+                    first: 'Nick',
+                    lastname: 'Kravtsov',
+                    city: 'Dnipro',
+                    currency: Currency.USD,
+                    username: 'admin',
+                },
             },
-        },
-    })],
+        }),
+    ],
 };

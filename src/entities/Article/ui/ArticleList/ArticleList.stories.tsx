@@ -30,12 +30,7 @@ const article = {
         username: 'Ulbi tv',
         avatar: 'https://xakep.ru/wp-content/uploads/2018/05/171485/KuroiSH-hacker.jpg',
     },
-    type: [
-        'IT',
-        'SCIENCE',
-        'POLITICS',
-        'ECONOMICS',
-    ],
+    type: ['IT', 'SCIENCE', 'POLITICS', 'ECONOMICS'],
     blocks: [
         {
             id: '1',
@@ -131,12 +126,10 @@ export const isLoadingBigDark: Story = {
 
 export const ListBig: Story = {
     args: {
-        articles: new Array(9)
-            .fill(0)
-            .map((item, index) => ({
-                ...article,
-                id: String(index),
-            })),
+        articles: new Array(9).fill(0).map((item, index) => ({
+            ...article,
+            id: String(index),
+        })),
         isLoading: false,
         view: ArticleView.BIG,
     },
@@ -144,12 +137,10 @@ export const ListBig: Story = {
 
 export const ListSmall: Story = {
     args: {
-        articles: new Array(9)
-            .fill(0)
-            .map((item, index) => ({
-                ...article,
-                id: String(index),
-            })),
+        articles: new Array(9).fill(0).map((item, index) => ({
+            ...article,
+            id: String(index),
+        })),
         isLoading: false,
         view: ArticleView.SMALL,
     },

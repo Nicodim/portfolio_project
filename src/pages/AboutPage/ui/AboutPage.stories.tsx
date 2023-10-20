@@ -18,12 +18,10 @@ export default meta;
 type Story = StoryObj<typeof AboutPage>;
 
 export const LIGHT: Story = {
-    args: {
-    },
+    args: {},
 };
 
 export const DARK: Story = {
-    args: {
-    },
+    args: {},
     decorators: [ThemeDecorator(Theme.DARK)],
 };

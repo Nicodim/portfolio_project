@@ -11,11 +11,7 @@ const MainPage = () => {
     const onChange = (value: string) => {
         setValue(value);
     };
-    return (
-        <Page data-testid="MainPage">
-            {t('Main page')}
-        </Page>
-    );
+    return <Page data-testid="MainPage">{t('Main page')}</Page>;
 };
 
 export default MainPage;

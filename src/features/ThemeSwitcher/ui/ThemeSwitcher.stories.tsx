@@ -15,14 +15,10 @@ export default meta;
 type Story = StoryObj<typeof ThemeSwitcher>;
 
 export const Light: Story = {
-    args: {
-
-    },
+    args: {},
 };
 
 export const Dark: Story = {
-    args: {
-
-    },
+    args: {},
     decorators: [ThemeDecorator(Theme.DARK)],
 };

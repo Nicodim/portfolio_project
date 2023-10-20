@@ -16,24 +16,20 @@ export default meta;
 type Story = StoryObj<typeof Navbar>;
 
 export const Light: Story = {
-    args: {
-
-    },
+    args: {},
     decorators: [StoreDecorator({})],
-
 };
 
 export const Dark: Story = {
-    args: {
-
-    },
+    args: {},
     decorators: [ThemeDecorator(Theme.DARK), StoreDecorator({})],
 };
 export const WithAuthData: Story = {
-    args: {
-
-    },
-    decorators: [ThemeDecorator(Theme.DARK), StoreDecorator({
-        user: { },
-    })],
+    args: {},
+    decorators: [
+        ThemeDecorator(Theme.DARK),
+        StoreDecorator({
+            user: {},
+        }),
+    ],
 };

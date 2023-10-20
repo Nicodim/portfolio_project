@@ -22,5 +22,4 @@ type Story = StoryObj<typeof ArticleDetailsPageHeader>;
 export const Primary: Story = {
     args: {},
     decorators: [StoreDecorator({})],
-
 };

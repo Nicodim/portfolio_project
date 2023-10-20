@@ -4,7 +4,13 @@ module.exports = {
         es2021: true,
         jest: true,
     },
-    extends: ['plugin:react/recommended', 'airbnb', 'plugin:i18next/recommended'],
+    extends: [
+        'plugin:react/recommended',
+        'airbnb',
+        'plugin:i18next/recommended',
+        'plugin:storybook/recommended',
+        'prettier',
+    ],
     parser: '@typescript-eslint/parser',
 
     parserOptions: {
@@ -14,21 +20,23 @@ module.exports = {
         ecmaVersion: 'latest',
         sourceType: 'module',
     },
-    plugins:
-        [
-            'react',
-            '@typescript-eslint',
-            'i18next',
-            'react-hooks',
-            'nicodim-plugin',
-        ],
+    plugins: [
+        'react',
+        '@typescript-eslint',
+        'i18next',
+        'react-hooks',
+        'nicodim-plugin',
+    ],
     rules: {
-        'react/jsx-indent': [2, 4],
-        'react/jsx-indent-props': [2, 4],
-        indent: [2, 4],
-        'react/jsx-filename-extension': [2, {
-            extensions: ['.js', '.jsx', '.tsx'],
-        }],
+        // "react/jsx-indent": [2, 4],
+        // "react/jsx-indent-props": [2, 4],
+        //     indent: [2, 4],
+        'react/jsx-filename-extension': [
+            2,
+            {
+                extensions: ['.js', '.jsx', '.tsx'],
+            },
+        ],
         'import/no-unresolved': 'off',
         'import/prefer-default-export': 'off',
         'no-unused-vars': 'warn',
@@ -41,7 +49,8 @@ module.exports = {
         'import/no-extraneous-dependencies': 'off',
         'no-underscore-dangle': 'off',
         'i18next/no-literal-string': [
-            'error', {
+            'error',
+            {
                 markupOnly: true,
                 ignoreAttribute: [
                     'refName',
@@ -56,7 +65,8 @@ module.exports = {
                     'gap',
                     'border',
                 ],
-            }],
+            },
+        ],
         'max-len': ['error', { code: 125, ignoreComments: true }],
         'jsx-a11y/click-events-have-key-events': 'off',
         'jsx-a11y/no-static-element-interactions': 'off',
@@ -68,6 +78,7 @@ module.exports = {
         '@typescript-eslint/no-unnecessary-type-assertion': 'off',
         'react/no-array-index-key': 'off',
         'arrow-body-style': 'off',
+        'react/jsx-max-props-per-line': ['error', { maximum: 4 }],
         'nicodim-plugin/path-checker': ['error', { alias: '@' }],
         'nicodim-plugin/layer-imports': [
             'error',
@@ -77,9 +88,14 @@ module.exports = {
             },
         ],
         'nicodim-plugin/public-api-imports': [
-            'error', {
+            'error',
+            {
                 alias: '@',
-                testFilesPatterns: ['**/*.test.*', '**/*.story.*', '**/StoreDecorator.tsx'],
+                testFilesPatterns: [
+                    '**/*.test.*',
+                    '**/*.story.*',
+                    '**/StoreDecorator.tsx',
+                ],
             },
         ],
         'import/order': [
@@ -106,18 +122,19 @@ module.exports = {
                 },
             },
         ],
-
     },
     globals: {
         __IS_DEV__: true,
         __API__: true,
         __PROJECT__: true,
     },
-    overrides: [{
-        files: ['**/src/**/*.{test,stories}.{ts,tsx}'],
-        rules: {
-            'i18next/no-literal-string': 'off',
-            'max-len': 'off',
+    overrides: [
+        {
+            files: ['**/src/**/*.{test,stories}.{ts,tsx}'],
+            rules: {
+                'i18next/no-literal-string': 'off',
+                'max-len': 'off',
+            },
         },
-    }],
+    ],
 };

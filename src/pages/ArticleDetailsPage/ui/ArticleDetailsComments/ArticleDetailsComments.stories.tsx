@@ -24,5 +24,4 @@ export const Primary: Story = {
         id: '1',
     },
     decorators: [StoreDecorator({})],
-
 };

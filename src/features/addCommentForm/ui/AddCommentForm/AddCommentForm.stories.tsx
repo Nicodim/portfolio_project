@@ -24,7 +24,5 @@ export const Primary: Story = {
     args: {
         onSendComment: action('onSendComment'),
     },
-    decorators: [StoreDecorator({
-
-    })],
+    decorators: [StoreDecorator({})],
 };

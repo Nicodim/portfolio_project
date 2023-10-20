@@ -16,40 +16,42 @@ export default meta;
 type Story = StoryObj<typeof Sidebar>;
 
 export const Light: Story = {
-    args: {
-
-    },
-    decorators: [StoreDecorator({
-        user: {
-            authData: {},
-        },
-    })],
+    args: {},
+    decorators: [
+        StoreDecorator({
+            user: {
+                authData: {},
+            },
+        }),
+    ],
 };
 export const LightNoAuth: Story = {
-    args: {
-
-    },
-    decorators: [StoreDecorator({
-        user: {},
-    })],
+    args: {},
+    decorators: [
+        StoreDecorator({
+            user: {},
+        }),
+    ],
 };
 
 export const Dark: Story = {
-    args: {
-
-    },
-    decorators: [ThemeDecorator(Theme.DARK), StoreDecorator({
-        user: {
-            authData: {},
-        },
-    })],
+    args: {},
+    decorators: [
+        ThemeDecorator(Theme.DARK),
+        StoreDecorator({
+            user: {
+                authData: {},
+            },
+        }),
+    ],
 };
 
 export const DarkNoAuth: Story = {
-    args: {
-
-    },
-    decorators: [ThemeDecorator(Theme.DARK), StoreDecorator({
-        user: {},
-    })],
+    args: {},
+    decorators: [
+        ThemeDecorator(Theme.DARK),
+        StoreDecorator({
+            user: {},
+        }),
+    ],
 };

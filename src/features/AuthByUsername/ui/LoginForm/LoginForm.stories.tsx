@@ -20,10 +20,10 @@ export default meta;
 type Story = StoryObj<typeof LoginForm>;
 
 export const Primary: Story = {
-    args: {
-
-    },
-    decorators: [StoreDecorator({
-        loginForm: { username: '123', password: 'asd' },
-    })],
+    args: {},
+    decorators: [
+        StoreDecorator({
+            loginForm: { username: '123', password: 'asd' },
+        }),
+    ],
 };

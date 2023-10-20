@@ -103,7 +103,6 @@ export const SquareSizeL: Story = {
         theme: ButtonTheme.BACKGROUND_INVERTED,
         square: true,
         size: ButtonSize.L,
-
     },
 };
 export const SquareSizeXL: Story = {

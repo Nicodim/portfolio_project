@@ -8,7 +8,6 @@ const meta: Meta<typeof CommentList> = {
     title: 'entities/Comment/CommentList',
     component: CommentList,
     tags: ['autodocs'],
-
 };
 
 export default meta;

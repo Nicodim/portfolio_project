@@ -8,16 +8,11 @@ export interface SkeletonProps {
     className?: string;
     height?: number | string;
     width?: number | string;
-    border?: string
+    border?: string;
 }
 
 export const Skeleton = memo((props: SkeletonProps) => {
-    const {
-        className,
-        border,
-        height,
-        width,
-    } = props;
+    const { className, border, height, width } = props;
 
     const styles: CSSProperties = {
         width,
