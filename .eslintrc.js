@@ -79,6 +79,7 @@ module.exports = {
         'react/no-array-index-key': 'off',
         'arrow-body-style': 'off',
         'react/jsx-max-props-per-line': ['error', { maximum: 4 }],
+        'react/no-unstable-nested-components': 'warn',
         'nicodim-plugin/path-checker': ['error', { alias: '@' }],
         'nicodim-plugin/layer-imports': [
             'error',
