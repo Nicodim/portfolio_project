@@ -5,7 +5,7 @@ import { Popover } from './Popover';
 import '@/app/styles/index.scss';
 
 const meta: Meta<typeof Popover> = {
-    title: 'shared/Popover',
+    title: 'shared/redesigned/Popover',
     component: Popover,
     tags: ['autodocs'],
 };

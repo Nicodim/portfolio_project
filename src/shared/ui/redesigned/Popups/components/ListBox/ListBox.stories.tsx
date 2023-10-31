@@ -8,7 +8,7 @@ import { Theme } from '@/shared/const/theme';
 import { ListBox } from './ListBox';
 
 const meta: Meta<typeof ListBox> = {
-    title: 'shared/ListBox',
+    title: 'shared/redesigned/ListBox',
     component: ListBox,
     tags: ['autodocs'],
     argTypes: {

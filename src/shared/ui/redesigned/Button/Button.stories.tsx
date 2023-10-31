@@ -9,7 +9,7 @@ import { Button } from './Button';
 import '@/app/styles/index.scss';
 
 const meta: Meta<typeof Button> = {
-    title: 'shared/Button',
+    title: 'shared/redesigned/Button',
     component: Button,
     tags: ['autodocs'],
     argTypes: {

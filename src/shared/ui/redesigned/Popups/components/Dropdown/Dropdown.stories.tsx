@@ -8,7 +8,7 @@ import { Dropdown } from './Dropdown';
 import '@/app/styles/index.scss';
 
 const meta: Meta<typeof Dropdown> = {
-    title: 'shared/Dropdown',
+    title: 'shared/redesigned/Dropdown',
     component: Dropdown,
     tags: ['autodocs'],
     argTypes: {

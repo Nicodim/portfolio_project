@@ -4,7 +4,7 @@ import { Avatar } from './Avatar';
 import AvatarImg from '../../../assets/tests/storybook.jpg';
 
 const meta: Meta<typeof Avatar> = {
-    title: 'shared/Avatar',
+    title: 'shared/redesigned/Avatar',
     component: Avatar,
     tags: ['autodocs'],
 };
