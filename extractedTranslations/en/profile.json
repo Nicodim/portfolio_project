@@ -1,21 +1,22 @@
 {
+  "Age": "Age",
   "An error occurred while loading the profile": "An error occurred while loading the profile",
   "Article not found": "Article not found",
   "Cancel": "Cancel",
   "City": "City",
   "Edit": "",
-  "Enter link to avatar": "Enter link to avatar",
+  "Link to avatar": "Link to avatar",
   "Enter username": "Enter username",
   "Incorrect age": "Incorrect age",
   "Incorrect country": "Incorrect country",
   "Incorrect user data": "Incorrect user data",
   "Last name": "",
+  "Name": "Name",
   "No data": "No data",
-  "Profile": "",
+  "Profile": "Profile",
   "Save": "Save",
   "Server error": "Server error",
+  "Surname": "Surname",
   "Try reload page": "Try reload page",
-  "Your age": "Your age",
-  "Your name": "",
-  "last name": ""
+  "Username": "Username"
 }
