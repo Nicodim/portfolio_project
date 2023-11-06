@@ -2,6 +2,7 @@
     "Test example": "Тестовый пример",
     "Translate": "Перевод",
     "Language": "Русский",
+    "Main": "Главная",
     "Main page": "Главная страница",
     "About us": "О нас",
     "Loading": "Загрузка...",
@@ -15,6 +16,7 @@
     "Auth form": "Форма авторизации",
     "The password or username you entered is not correct": "Введенный вами пароль или логин не верны",
     "Exit": "Выйти",
+    "Profile": "Профиль",
     "Profile page": "Profile page",
     "Select currency": "Выберите валюту",
     "Choose the country": "Выберите страну",
@@ -30,9 +32,16 @@
     "creation date": "дате создания",
     "title": "названию",
     "views": "просмотрам",
+    "Articles": "Статьи",
     "All articles": "Все статьи",
+    "Edit": "Редактировать",
     "Editing an article with ID = ": "Редактирование статьи с ID = ",
     "Creating a new article": "Создание новой статьи",
     "Admin Panel": "Панель админа",
-    "You do not have access to this page": "У вас нет доступа к этой странице"
+    "You do not have access to this page": "У вас нет доступа к этой странице",
+    "Article ratings coming soon!": "Article ratings coming soon!",
+    "{{count}} views_zero": "{{count}} просмотров",
+    "{{count}} views_one": "{{count}} просмотр",
+    "{{count}} views_few": "{{count}} просмотра",
+    "{{count}} views_many": "{{count}} просмотров"
 }

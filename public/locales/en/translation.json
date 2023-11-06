@@ -2,6 +2,7 @@
     "Test example": "Test example",
     "Translate": "Translate",
     "Language": "English",
+    "Main": "Main",
     "Main page": "Main page",
     "About us": "About us",
     "Loading": "Loading...",
@@ -15,6 +16,7 @@
     "Auth form": "Auth form",
     "The password or username you entered is not correct": "The password or username you entered is not correct",
     "Exit": "Exit",
+    "Profile": "Profile",
     "Profile page": "Profile page",
     "Select currency": "Select currency",
     "Choose the country": "Choose the country",
@@ -30,9 +32,14 @@
     "creation date": "creation date",
     "title": "title",
     "views": "views",
+    "Articles": "Articles",
     "All articles": "All articles",
     "Editing an article with ID = ": "Editing an article with ID = ",
     "Creating a new article": "Creating a new article",
     "Admin Panel": "Admin Panel",
-    "You do not have access to this page": "You do not have access to this page"
+    "You do not have access to this page": "You do not have access to this page",
+    "Article ratings coming soon!": "Article ratings coming soon!",
+    "{{count}} views_zero": "{{count}} views",
+    "{{count}} views_one": "{{count}} view",
+    "{{count}} views_other": "{{count}} views"
 }
