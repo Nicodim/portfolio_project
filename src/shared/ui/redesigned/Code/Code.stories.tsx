@@ -5,7 +5,7 @@ import { Code } from './Code';
 import '@/app/styles/index.scss';
 
 const meta: Meta<typeof Code> = {
-    title: 'shared/Code',
+    title: 'shared/redesigned/Code',
     component: Code,
     tags: ['autodocs'],
     argTypes: {
@@ -30,8 +30,8 @@ const meta: Meta<typeof Code> = {
     tags: ['autodocs'],
     argTypes: {
         // @ts-ignore
-        backgroundColor: { control: 'color' },
-    },
+        backgroundColor: { control: 'color' }
+    }
 };
 
 export default meta;
