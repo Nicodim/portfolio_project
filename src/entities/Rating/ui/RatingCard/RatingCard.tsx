@@ -74,7 +74,6 @@ export const RatingCard = memo((props: RatingCardProps) => {
             feature="isAppRedesigned"
             on={
                 <>
-                    {' '}
                     <Text title={feedbackTitle} />
                     <Input
                         data-testid="RatingCard.Input"
@@ -86,7 +85,6 @@ export const RatingCard = memo((props: RatingCardProps) => {
             }
             off={
                 <>
-                    {' '}
                     <TextDeprecated title={feedbackTitle} />
                     <InputDeprecated
                         data-testid="RatingCard.Input"
@@ -196,7 +194,12 @@ export const RatingCard = memo((props: RatingCardProps) => {
         <ToggleFeatures
             feature="isAppRedesigned"
             on={
-                <Card border="round" padding="24" max data-testid="RatingCard">
+                <Card
+                    border="partial"
+                    padding="24"
+                    max
+                    data-testid="RatingCard"
+                >
                     {content}
                 </Card>
             }

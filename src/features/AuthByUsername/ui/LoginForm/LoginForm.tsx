@@ -8,10 +8,18 @@ import {
     DynamicModuleLoader,
     ReducersList,
 } from '@/shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
+import { ToggleFeatures } from '@/shared/lib/features';
 import { useAppDispatch } from '@/shared/lib/hooks/useAppDispatch/useAppDispatch';
-import { Button, ButtonTheme } from '@/shared/ui/deprecated/Button';
-import { Input } from '@/shared/ui/deprecated/Input';
-import { Text, TextTheme } from '@/shared/ui/deprecated/Text';
+import {
+    Button as ButtonDeprecated,
+    ButtonTheme,
+} from '@/shared/ui/deprecated/Button';
+import { Input as InputDeprecated } from '@/shared/ui/deprecated/Input';
+import { Text as TextDeprecated, TextTheme } from '@/shared/ui/deprecated/Text';
+import { Button } from '@/shared/ui/redesigned/Button';
+import { Input } from '@/shared/ui/redesigned/Input';
+import { VStack } from '@/shared/ui/redesigned/Stack';
+import { Text } from '@/shared/ui/redesigned/Text';
 
 import cls from './LoginForm.module.scss';
 import { getLoginError } from '../../model/selectors/getLoginError/getLoginError';
@@ -62,40 +70,81 @@ const LoginForm = memo(({ className, onSuccess }: LoginFormProps) => {
 
     return (
         <DynamicModuleLoader removeAfterUnmount reducers={initialReducers}>
-            <div className={classNames(cls.LoginForm, {}, [className])}>
-                <Text title={t('Auth form')} />
-                {error && (
-                    <Text
-                        theme={TextTheme.ERROR}
-                        text={t(
-                            'The password or username you entered is not correct',
+            <ToggleFeatures
+                feature="isAppRedesigned"
+                on={
+                    <VStack gap="16">
+                        <Text title={t('Auth form')} />
+                        {error && (
+                            <Text
+                                variant="error"
+                                text={t(
+                                    'The password or username you entered is not correct',
+                                )}
+                            />
                         )}
-                    />
-                )}
-                <Input
-                    type="text"
-                    className={cls.input}
-                    placeholder={t('Enter username')}
-                    autoFocus
-                    onChange={onChangeUsername}
-                    value={username}
-                />
-                <Input
-                    type="text"
-                    className={cls.input}
-                    placeholder={t('Enter password')}
-                    onChange={onChangePassword}
-                    value={password}
-                />
-                <Button
-                    className={cls.loginBtn}
-                    theme={ButtonTheme.OUTLINE}
-                    onClick={onLoginClick}
-                    disabled={isLoading}
-                >
-                    {t('Sing in')}
-                </Button>
-            </div>
+                        <Input
+                            type="text"
+                            className={cls.input}
+                            placeholder={t('Enter username')}
+                            autoFocus
+                            onChange={onChangeUsername}
+                            value={username}
+                        />
+                        <Input
+                            type="text"
+                            className={cls.input}
+                            placeholder={t('Enter password')}
+                            onChange={onChangePassword}
+                            value={password}
+                        />
+                        <Button
+                            className={cls.loginBtn}
+                            variant="outline"
+                            onClick={onLoginClick}
+                            disabled={isLoading}
+                        >
+                            {t('Sing in')}
+                        </Button>
+                    </VStack>
+                }
+                off={
+                    <div className={classNames(cls.LoginForm, {}, [className])}>
+                        <TextDeprecated title={t('Auth form')} />
+                        {error && (
+                            <TextDeprecated
+                                theme={TextTheme.ERROR}
+                                text={t(
+                                    'The password or username you entered is not correct',
+                                )}
+                            />
+                        )}
+                        <InputDeprecated
+                            type="text"
+                            className={cls.input}
+                            placeholder={t('Enter username')}
+                            autoFocus
+                            onChange={onChangeUsername}
+                            value={username}
+                        />
+                        <InputDeprecated
+                            type="text"
+                            className={cls.input}
+                            placeholder={t('Enter password')}
+                            onChange={onChangePassword}
+                            value={password}
+                        />
+                        <ButtonDeprecated
+                            className={cls.loginBtn}
+                            theme={ButtonTheme.OUTLINE}
+                            onClick={onLoginClick}
+                            disabled={isLoading}
+                        >
+                            {t('Sing in')}
+                        </ButtonDeprecated>
+                    </div>
+                }
+            />
         </DynamicModuleLoader>
     );
 });
