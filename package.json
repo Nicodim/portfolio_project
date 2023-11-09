@@ -22,7 +22,8 @@
         "storybook:build": "storybook build -c ./config/storybook",
         "generate:slice": "node ./scripts/createSlice/index.js",
         "postinstall": "node ./scripts/clear-cache.js",
-        "remove-feature": "ts-node ./scripts/remove-feature.ts"
+        "remove-feature": "ts-node ./scripts/remove-feature.ts",
+        "deploy": "gh-pages -d build -b master"
     },
     "lint-staged": {
         "**/*.{ts,tsx}": [
@@ -30,6 +31,7 @@
             "eslint"
         ]
     },
+    "homepage": "https://Nicodim.github.io/portfolio_project",
     "keywords": [],
     "author": "",
     "license": "ISC",
@@ -83,6 +85,7 @@
         "eslint-plugin-storybook": "^0.6.12",
         "file-loader": "^6.2.0",
         "fork-ts-checker-webpack-plugin": "^8.0.0",
+        "gh-pages": "^6.0.0",
         "html-webpack-plugin": "^5.5.0",
         "identity-obj-proxy": "^3.0.0",
         "jest": "^27.5.1",
