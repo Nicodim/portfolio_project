@@ -39,6 +39,7 @@ export const ArticlesFilters = memo((props: ArticlesFiltersProps) => {
         order,
         type,
     } = props;
+
     const { t } = useTranslation();
 
     return (
