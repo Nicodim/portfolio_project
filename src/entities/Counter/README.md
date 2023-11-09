@@ -1,1 +1,0 @@
-## Entity of the counter

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkportfolio=self.webpackChunkportfolio||[]).push([[360],{4360:function(e,n,t){t.r(n),t(7294);var o=t(2327),r=t(2896),l=t(5893);n.default=()=>{const{t:e}=(0,o.$)();return(0,l.jsx)(r.T,{children:e("Admin Panel")})}}}]);
