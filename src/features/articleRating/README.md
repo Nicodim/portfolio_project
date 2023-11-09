@@ -1,0 +1,1 @@
+## Feature of rating an article
