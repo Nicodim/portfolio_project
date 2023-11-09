@@ -8,6 +8,7 @@
 .sidebar {
     grid-area: sidebar;
     padding: 32px;
+    max-width: 284px;
 }
 
 .content {
@@ -34,4 +35,5 @@
 
 .toolbar {
     height: 100%;
+    width: 100%;
 }
