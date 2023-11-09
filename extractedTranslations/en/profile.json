@@ -5,6 +5,7 @@
   "Cancel": "Cancel",
   "City": "City",
   "Edit": "",
+  "Enter link to avatar": "",
   "Enter username": "Enter username",
   "Incorrect age": "Incorrect age",
   "Incorrect country": "Incorrect country",
@@ -18,5 +19,7 @@
   "Server error": "Server error",
   "Surname": "Surname",
   "Try reload page": "Try reload page",
-  "Username": "Username"
+  "Username": "Username",
+  "Your age": "",
+  "Your name": ""
 }
