@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 import { useTranslation } from 'react-i18next';
 
+import { Text } from '@/shared/ui/redesigned/Text';
 import { Page } from '@/widgets/Page';
 
 const MainPage = () => {
@@ -11,7 +12,11 @@ const MainPage = () => {
     const onChange = (value: string) => {
         setValue(value);
     };
-    return <Page data-testid="MainPage">{t('Main page')}</Page>;
+    return (
+        <Page data-testid="MainPage">
+            <Text title={t('Main page')} />
+        </Page>
+    );
 };
 
 export default MainPage;
